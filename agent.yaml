@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: grpc-schema-evolution-guard
+version: 1.0.0
+description: Protects microservice communication contracts by checking protocol buffer definitions for backward and forward wire compatibility breaks.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - protobuf-compatibility
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - devtools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/grpc-schema-evolution-guard"
